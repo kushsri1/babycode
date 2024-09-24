@@ -1,0 +1,32 @@
+<div class="navbar">
+    <div class="nav-section-1">
+<h2>BabyCode</h2>
+    </div>
+    <div class="nav-items">
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <li><i class="fa-solid fa-user-group"></i>Community</li>
+            <li><i class="fa-solid fa-chalkboard-user"></i>Stories</li>
+            <li><i class="fa-solid fa-store"></i>Shop</li>
+            <li><i class="fa-regular fa-message"></i>Feedback</li>
+    </div>
+    <div class="explore-premium">
+        <h3>Explore premium features with ease!</h3>
+        <p><i class="fa-regular fa-circle-check"></i>Unlimited Speaking Test Access</p>
+        <p><i class="fa-regular fa-circle-check"></i>Unlimited Writing Test Access</p>
+        <p><i class="fa-regular fa-circle-check"></i>Analyze Your Answer</p>
+        <p><i class="fa-regular fa-circle-check"></i>Check Brand Score</p>
+        <div class="explore-premium-price">
+        <span>Only @ &#8377; 299 </span>
+        <h4>Buy Now</h4>
+    </div>
+    </div>
+
+    <div class="authentication">
+        <% if(!currUser) {%>
+        <button class="btn btn-outline-primary mt-3"><a href="/signup"><i class="fa-solid fa-user-plus"></i> Sign-up</a></button><br>
+        <button class="btn btn-outline-primary"><a href="/login"><i class="fa-solid fa-user-tie"></i> Login</button>
+            <% } %> <% if(currUser) {%>
+        <button class="btn btn-outline-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+        <% } %>
+    </div>
+</div>
